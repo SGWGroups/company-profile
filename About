@@ -3,19 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SGW Groups</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Jika ada file CSS -->
+    <title>Tentang Kami - Savoria</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya Dasar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(to right, #00695c, #004d40);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Selamat datang di SGW Groups</h1>
+        <h1>Tentang Kami</h1>
+        <p>Menghadirkan Produk Berkualitas untuk Anda</p>
     </header>
+
     <section>
-        <h2>Tentang Kami</h2>
-        <p>SGW Groups adalah perusahaan distribusi dan manufaktur rokok dengan jaringan luas di Indonesia...</p>
+        <h2>Siapa Kami?</h2>
+        <div class="content">
+            <div class="text">
+                <p>Kami adalah perusahaan manufaktur yang berdedikasi untuk menyediakan produk-produk terbaik dengan kualitas yang terjamin. Dengan pengalaman bertahun-tahun, kami terus berinovasi untuk memenuhi kebutuhan pelanggan kami.</p>
+                <p>Komitmen kami adalah menciptakan dampak positif di masyarakat melalui produk dan layanan kami.</p>
+            </div>
+            <img src="https://via.placeholder.com/500" alt="Tentang Kami">
+        </div>
     </section>
+
+    <section>
+        <h2>Visi Kami</h2>
+        <p>Menjadi pemimpin dalam industri dengan menghadirkan solusi inovatif yang memberikan manfaat nyata bagi masyarakat.</p>
+    </section>
+
+    <section>
+        <h2>Misi Kami</h2>
+        <ul>
+            <li>Memberikan produk berkualitas tinggi yang sesuai dengan kebutuhan pelanggan.</li>
+            <li>Berinovasi dalam setiap aspek bisnis untuk meningkatkan efisiensi dan keberlanjutan.</li>
+            <li>Membangun hubungan yang kuat dan saling menguntungkan dengan mitra bisnis kami.</li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2025 SGW Groups</p>
+        <p>&copy; 2025 Perusahaan Anda. Semua Hak Dilindungi.</p>
     </footer>
 </body>
 </html>
