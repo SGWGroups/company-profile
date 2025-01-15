@@ -1,40 +1,85 @@
-<div class="video-bg">
-    <video autoplay loop muted>
-        <source src="background-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGW Groups</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SGW Groups</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#business">Our Business</a>
+            <a href="#career">Career</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<div class="tagline">
-    <h1>Semangat Perjuangan</h1>
-    <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Explore More</button>
-</div>
+    <div class="video-bg">
+        <video autoplay loop muted>
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-<section id="about">
-    <h2>About SGW Groups</h2>
-    <p>SGW Groups adalah holding company dari Mitra Prasetya Abadi dan Bellvania Karsa Prasaja.</p>
-</section>
+    <div class="tagline">
+        <h1>Semangat Perjuangan</h1>
+        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Explore More</button>
+    </div>
 
-<section id="products">
-    <h2>Our Products</h2>
-    <p>Discover our range of products distributed by Mitra Prasetya Abadi and manufactured by Bellvania Karsa Prasaja.</p>
-</section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About SGW Groups</h2>
+        <p>SGW Groups adalah holding company dari Mitra Prasetya Abadi dan Bellvania Karsa Prasaja. Kami berkomitmen untuk memberikan kontribusi terbaik dalam industri tembakau di Indonesia.</p>
+    </section>
 
-<section id="business">
-    <h2>Our Business</h2>
-    <p>Learn about our integrated approach to manufacturing and distribution.</p>
-</section>
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Discover our range of products distributed by Mitra Prasetya Abadi and manufactured by Bellvania Karsa Prasaja.</p>
+    </section>
 
-<section id="career">
-    <h2>Career</h2>
-    <p>Join our team and grow your career with SGW Groups.</p>
-</section>
+    <!-- Our Business Section -->
+    <section id="business">
+        <h2>Our Business</h2>
+        <p>At SGW Groups, we integrate manufacturing and distribution to deliver excellence in the tobacco industry.</p>
+        <div class="business-flow">
+            <div class="step">
+                <img src="factory-icon.png" alt="Factory">
+                <p>Manufacturing</p>
+            </div>
+            <div class="arrow">➔</div>
+            <div class="step">
+                <img src="distribution-icon.png" alt="Distribution">
+                <p>Distribution</p>
+            </div>
+            <div class="arrow">➔</div>
+            <div class="step">
+                <img src="consumer-icon.png" alt="Consumer">
+                <p>Consumers</p>
+            </div>
+        </div>
+    </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Reach out for more information about SGW Groups.</p>
-</section>
+    <!-- Career Section -->
+    <section id="career">
+        <h2>Career</h2>
+        <p>Join our team and grow your career with SGW Groups. We value innovation, dedication, and teamwork.</p>
+    </section>
 
-<footer>
-    <p>&copy; 2025 SGW Groups. All rights reserved.</p>
-</footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more? Reach out to us at:</p>
+        <p>Email: info@sgwgroups.com</p>
+        <p>Phone: +62-123-456-789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SGW Groups. All rights reserved.</p>
+    </footer>
+</body>
+</html>
