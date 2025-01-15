@@ -1,24 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGW Groups</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SGW Groups - Company Profile</title>
+    <style>
+        /* Gaya Umum */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #004d61;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Animasi Mobil */
+        .animation-container {
+            position: relative;
+            height: 250px;
+            background: #e8e8e8;
+            overflow: hidden;
+        }
+
+        .animation-container img {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            animation: moveCar 6s linear infinite;
+        }
+
+        @keyframes moveCar {
+            from { left: -200px; }
+            to { left: 100%; }
+        }
+
+        /* Konten Utama */
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            margin-top: 40px;
+            color: #004d61;
+        }
+
+        /* Grid untuk Subsidiary Highlight */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background: #004d61;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>SGW Groups</h1>
-        <p>Mengambil Langkah untuk Keberlanjutan dimasa Depan.</p>
+        <p>Holding Company: Mitra Prasetya Abadi & Bellvania Karsa Prasaja</p>
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>SGW Groups merupakan grup perusahaan Multi Industri yang berkembang pesat, yang memulai bisnisnya melalui Distributor dan kemudian berkembang ke industri Tembakau. Kami telah mendampingi konsumen melalui merek-merek kami seperti SGW Kretek, SGW Coklat Kretek, SGW Aromatic dan SGW Extra Coklat; mulai dari SKT, SKM, SPM, LTLN dan Cerutu dan akan terus Berkelanjutan.</p>
-        </section>
-    </main>
+
+    <!-- Hero Section (Animasi Mobil) -->
+    <div class="animation-container">
+        <img src="https://via.placeholder.com/200" alt="Mobil 1" style="top: 50px;">
+        <img src="https://via.placeholder.com/200" alt="Mobil 2" style="top: 150px;">
+    </div>
+
+    <!-- Tentang SGW Groups -->
+    <section>
+        <h2>Tentang SGW Groups</h2>
+        <p>
+            SGW Groups adalah holding company yang berkomitmen mendukung dua anak perusahaan kami: 
+            <b>Mitra Prasetya Abadi</b>, spesialis dalam manufaktur modern, dan 
+            <b>Bellvania Karsa Prasaja</b>, pemimpin dalam solusi logistik dan distribusi.
+        </p>
+    </section>
+
+    <!-- Subsidiary Highlight -->
+    <section>
+        <h2>Anak Perusahaan Kami</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Mitra Prasetya Abadi</h3>
+                <p>Spesialis dalam manufaktur dan inovasi teknologi.</p>
+            </div>
+            <div class="card">
+                <h3>Bellvania Karsa Prasaja</h3>
+                <p>Ahli dalam solusi logistik dan distribusi terpadu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk & Layanan -->
+    <section>
+        <h2>Produk & Layanan</h2>
+        <p>Kami menyediakan berbagai produk dan layanan unggulan melalui anak perusahaan kami.</p>
+    </section>
+
+    <!-- News & Articles -->
+    <section>
+        <h2>Berita & Artikel</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Berita 1</h3>
+                <p>Berita terbaru tentang SGW Groups.</p>
+            </div>
+            <div class="card">
+                <h3>Artikel 1</h3>
+                <p>Artikel menarik dari Bellvania atau Mitra Prasetya Abadi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Opportunities & Careers -->
+    <section>
+        <h2>Peluang Bisnis & Karier</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Peluang Bisnis</h3>
+                <p>Bergabunglah sebagai mitra bisnis kami untuk masa depan yang sukses.</p>
+            </div>
+            <div class="card">
+                <h3>Karier</h3>
+                <p>Bangun karier yang gemilang bersama tim profesional kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Alamat -->
+    <section>
+        <h2>Kontak Kami</h2>
+        <p>Alamat: Jalan Utama No. 123, Jakarta</p>
+        <p>Telepon: (021) 123-4567</p>
+        <p>Email: info@sgwgroups.com</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 SGW Groups. All rights reserved.</p>
+        <p>&copy; 2025 SGW Groups. Semua Hak Dilindungi.</p>
     </footer>
 </body>
 </html>
