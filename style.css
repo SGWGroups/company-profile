@@ -1,6 +1,13 @@
 /* CSS untuk styling halaman */
 
-/* Animasi untuk gambar mobil */
+/* CSS untuk animasi mobil */
+.animation-container {
+    position: relative;
+    height: 200px; /* Pastikan kontainer cukup tinggi untuk menampung gambar */
+    width: 100%;
+    overflow: hidden;
+}
+
 .animation-container img {
     position: absolute;
     animation: moveCar 5s linear infinite;
@@ -8,10 +15,10 @@
 
 @keyframes moveCar {
     0% {
-        left: 0;
+        left: -200px;  /* Posisi awal gambar di luar layar */
     }
     100% {
-        left: 100%;
+        left: 100%;  /* Gambar bergerak ke kanan hingga keluar layar */
     }
 }
 
