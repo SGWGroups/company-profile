@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - SGW Groups</title>
+    <title>SGW Groups</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="Products.html">Products</a></li>
-    </ul>
-</nav>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="SGW Groups Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="business.html">Our Business</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Welcome to SGW Groups</h1>
-        <p>Semangat Perjuangan</p>
+        <!-- Background Video -->
+        <video class="hero-video" autoplay muted loop>
+            <source src="videos/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <h1>SGW Groups</h1>
+            <p>Melayani dengan Hati untuk Masa Depan</p>
+            <a href="about.html" class="hero-button">Learn More</a>
+        </div>
     </section>
 </body>
 </html>
