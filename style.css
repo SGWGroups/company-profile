@@ -1,3 +1,21 @@
+/* CSS untuk styling halaman */
+
+/* Animasi untuk gambar mobil */
+.animation-container img {
+    position: absolute;
+    animation: moveCar 5s linear infinite;
+}
+
+@keyframes moveCar {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Gaya umum untuk body dan elemen lainnya */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
