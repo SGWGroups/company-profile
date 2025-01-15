@@ -7,78 +7,112 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">SGW Groups</a>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#business">Our Business</a>
-            <a href="#career">Career</a>
-            <a href="#contact">Contact</a>
+    <!-- Background Section -->
+    <section class="background">
+        <video autoplay loop controls>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="tagline">Semangat Perjuangan</div>
+    </section>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home"><img src="logo.png" alt="SGW Groups Logo"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#business">Our Business</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="video-bg">
-        <video autoplay loop controls>
-           <source src="Assets/background-video.mp4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div class="tagline">
+    <!-- Home Section -->
+    <section id="home" class="home">
         <h1>Semangat Perjuangan</h1>
-        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Explore More</button>
-    </div>
+        <p>SGW Groups adalah holding company yang berkomitmen pada kualitas dan integritas dalam distribusi dan manufaktur.</p>
+        <a href="#about" class="btn">Explore More</a>
+    </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <h2>About SGW Groups</h2>
-        <p>SGW Groups adalah holding company dari Mitra Prasetya Abadi dan Bellvania Karsa Prasaja. Kami berkomitmen untuk memberikan kontribusi terbaik dalam industri tembakau di Indonesia.</p>
+        <p>Sejarah berdirinya SGW Groups...</p>
+        <h3>Visi dan Misi</h3>
+        <p>Visi dan misi SGW Groups...</p>
+        <h3>Struktur Organisasi</h3>
+        <p>Penjelasan tentang struktur organisasi...</p>
+        <h3>Peran Mitra Prasetya Abadi dan Bellvania Karsa Prasaja</h3>
+        <p>Deskripsi tentang masing-masing peran...</p>
     </section>
 
     <!-- Products Section -->
-    <section id="products">
+    <section id="products" class="products">
         <h2>Our Products</h2>
-        <p>Discover our range of products distributed by Mitra Prasetya Abadi and manufactured by Bellvania Karsa Prasaja.</p>
-    </section>
-
-    <!-- Our Business Section -->
-    <section id="business">
-        <h2>Our Business</h2>
-        <p>At SGW Groups, we integrate manufacturing and distribution to deliver excellence in the tobacco industry.</p>
-        <div class="business-flow">
-            <div class="step">
-                <img src="factory-icon.png" alt="Factory">
-                <p>Manufacturing</p>
-            </div>
-            <div class="arrow">➔</div>
-            <div class="step">
-                <img src="distribution-icon.png" alt="Distribution">
-                <p>Distribution</p>
-            </div>
-            <div class="arrow">➔</div>
-            <div class="step">
-                <img src="consumer-icon.png" alt="Consumer">
-                <p>Consumers</p>
-            </div>
+        <p>Produk unggulan SGW Groups...</p>
+        <div class="product-categories">
+            <h3>Produk Distribusi</h3>
+            <p>Distribusi oleh Mitra Prasetya Abadi...</p>
+            <h3>Produk Manufaktur</h3>
+            <p>Manufaktur oleh Bellvania Karsa Prasaja...</p>
         </div>
     </section>
 
+    <!-- Business Section -->
+    <section id="business" class="business">
+        <h2>Our Business</h2>
+        <p>Penjelasan model bisnis SGW Groups...</p>
+        <div class="infographic">Alur kerja perusahaan...</div>
+    </section>
+
     <!-- Career Section -->
-    <section id="career">
-        <h2>Career</h2>
-        <p>Join our team and grow your career with SGW Groups. We value innovation, dedication, and teamwork.</p>
+    <section id="career" class="career">
+        <h2>Join Our Team</h2>
+        <p>Informasi lowongan kerja dan budaya kerja...</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume">
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>Have questions or want to learn more? Reach out to us at:</p>
-        <p>Email: info@sgwgroups.com</p>
-        <p>Phone: +62-123-456-789</p>
+        <p>Alamat kantor pusat:...</p>
+        <p>Nomor telepon:...</p>
+        <p>Email:...</p>
+        <form>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
-    <footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#business">Our Business</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <p>&copy; 2025 SGW Groups. All rights reserved.</p>
     </footer>
 </body>
