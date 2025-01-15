@@ -1,83 +1,67 @@
-/* CSS untuk styling halaman */
-
-/* CSS untuk animasi mobil */
-.animation-container {
-    position: relative;
-    height: 200px; /* Pastikan kontainer cukup tinggi untuk menampung gambar */
-    width: 100%;
-    overflow: hidden;
-}
-
-.animation-container img {
-    position: absolute;
-    animation: moveCar 5s linear infinite;
-}
-
-@keyframes moveCar {
-    0% {
-        left: -200px;  /* Posisi awal gambar di luar layar */
-    }
-    100% {
-        left: 100%;  /* Gambar bergerak ke kanan hingga keluar layar */
-    }
-}
-
-/* Gaya umum untuk body dan elemen lainnya */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
 header {
-    background-color: #004d61;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.card {
-    background-color: #ececec;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header nav ul li {
+    display: inline;
 }
 
-footer {
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 10px;
-    background-color: #004d61;
-    color: white;
+    padding: 50px 20px;
+    background: #555;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* About Section */
+.about, .products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2, .products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
