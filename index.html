@@ -1,43 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGW Groups</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="main-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="SGW Groups Logo">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Product</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="business.html">Our Business</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="video-bg">
+    <video autoplay loop muted>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <!-- Background Video -->
-        <video class="hero-video" autoplay muted loop>
-            <source src="videos/background-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+<div class="tagline">
+    <h1>Semangat Perjuangan</h1>
+    <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Explore More</button>
+</div>
 
-        <!-- Content -->
-        <div class="hero-content">
-            <h1>SGW Groups</h1>
-            <p>Melayani dengan Hati untuk Masa Depan</p>
-            <a href="about.html" class="hero-button">Learn More</a>
-        </div>
-    </section>
-</body>
-</html>
+<section id="about">
+    <h2>About SGW Groups</h2>
+    <p>SGW Groups adalah holding company dari Mitra Prasetya Abadi dan Bellvania Karsa Prasaja.</p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <p>Discover our range of products distributed by Mitra Prasetya Abadi and manufactured by Bellvania Karsa Prasaja.</p>
+</section>
+
+<section id="business">
+    <h2>Our Business</h2>
+    <p>Learn about our integrated approach to manufacturing and distribution.</p>
+</section>
+
+<section id="career">
+    <h2>Career</h2>
+    <p>Join our team and grow your career with SGW Groups.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out for more information about SGW Groups.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 SGW Groups. All rights reserved.</p>
+</footer>
